@@ -1,0 +1,55 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.NavBar1{
+    color: white;
+    background: #286090;
+    width: 100%;
+    height: 20px;
+    padding-block: 5px;
+    .TopNavContainer{
+        float: right;
+        display: inline-flex;
+        padding-right: 27%;
+    }
+    ul{
+        margin-top: 0;
+        list-style-type: none;
+        display: inline-flex;
+        li{
+            margin-inline: 10px;
+            a{
+                font-family: "roboto", sans-serif;
+                font-size: 12px;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    .LanguageSwitch{
+        margin-top: -4px;
+        ul{
+            padding-left: 10px;
+            margin-right: 0;
+            li{
+                margin-inline: 3px;
+            }
+        }
+    }
+}
+.NavBar2{
+    background: blue;
+    width: 100%;
+    height: 75px;
+}
+.EndCard{
+    background: brown;
+    width: 100%;
+    height: 100%
+}
+.MainBody{
+    background: black;
+    width: 100%;
+    height: 100%px;
+}
