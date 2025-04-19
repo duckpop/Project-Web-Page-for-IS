@@ -1,55 +1,142 @@
 body{
     padding: 0;
     margin: 0;
+    background: gray;
 }
-.NavBar1{
+
+/*navbar 1 / top nav bar*/
+.NavBar1 {
     color: white;
     background: #286090;
     width: 100%;
     height: 20px;
     padding-block: 5px;
-    .TopNavContainer{
-        float: right;
-        display: inline-flex;
-        padding-right: 27%;
-    }
-    ul{
-        margin-top: 0;
-        list-style-type: none;
-        display: inline-flex;
-        li{
-            margin-inline: 10px;
-            a{
-                font-family: "roboto", sans-serif;
-                font-size: 12px;
-                text-decoration: none;
-                color: white;
-            }
-        }
-    }
-    .LanguageSwitch{
-        margin-top: -4px;
-        ul{
-            padding-left: 10px;
-            margin-right: 0;
-            li{
-                margin-inline: 3px;
-            }
+}
+
+.TopNavContainer {
+    float: right;
+    display: inline-flex;
+    padding-right: 27%;
+}
+
+.TopNavBarLinks {
+    margin-top: 0;
+    list-style-type: none;
+    display: inline-flex;
+    li {
+        margin-inline: 10px;
+        a {
+            font-family: "roboto", sans-serif;
+            text-decoration: none;
+            color: white;
+            padding: 4px;
+            border-radius: 3px;
         }
     }
 }
+.limit{
+    font-size: 12px;
+}
+
+.LanguageSwitch {
+    margin-top: -4px;
+}
+.language{
+    padding-left: 10px;
+    margin-right: 0;
+    li{
+        margin-inline: 3px;
+    }
+}
+.limit:hover{
+    background: #4c7ca6;
+}
+
+/*nab bar 2 / bottom nav bar*/
 .NavBar2{
-    background: blue;
+    background: white;
     width: 100%;
     height: 75px;
+    padding-top: 10px;
 }
-.EndCard{
-    background: brown;
-    width: 100%;
-    height: 100%
-}
+
+/*MainBody*/
 .MainBody{
-    background: black;
-    width: 100%;
-    height: 100%px;
+
+}
+
+/*EndCard*/
+.EndCard{
+
+}
+
+/*change size based on screen*/
+/*step 1*/
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+    /*Top Nav change*/
+    .TopNavContainer{
+        padding-right: 20vw;
+    }
+    .limit{
+        font-size: 10px;
+    }
+    .TopNavBarLinks{
+        li{
+            margin-inline: 6px;
+        }
+    }
+
+    /*Bottom nav change*/
+
+}
+/*step 2*/
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    /*Top Nav change*/
+    .TopNavContainer{
+        padding-right: 10vw;
+    }
+    .limit{
+        font-size: 9px;
+    }
+    .TopNavBarLinks{
+        li{
+            margin-inline: 5px;
+        }
+    }
+
+    /*Bottom nav change*/
+}
+/*step 3*/
+@media screen and (min-width: 450px) and (max-width: 700px) {
+    /*Top Nav change*/
+    .TopNavContainer{
+        padding-right: 4vw;
+    }
+    .limit{
+        font-size: 6px;
+    }
+    .TopNavBarLinks{
+        li{
+            margin-inline: 5px;
+        }
+    }
+
+    /*Bottom nav change*/
+}
+/*step4*/
+@media screen and(max-width: 450px) {
+    /*Top Nav change*/
+    .TopNavContainer{
+        padding-right: 0;
+    }
+    .limit{
+        font-size: 6px;
+    }
+    .TopNavBarLinks{
+        li{
+            margin-inline: 3px;
+        }
+    }
+
+    /*Bottom nav change*/
 }
