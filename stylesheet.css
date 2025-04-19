@@ -5,59 +5,58 @@ body{
 }
 
 /*navbar 1 / top nav bar*/
-.NavBar1 {
-    color: white;
-    background: #286090;
+/*#286090*/
+.NavBar{
+    background: white;
+    height: 80px;
+    padding-top: 10px;
+    padding-inline: 40px;
+    flex-wrap: wrap;
+}
+
+.logo {
     width: 100%;
-    height: 20px;
-    padding-block: 5px;
+    display: flex;
+    gap: 10px;
+    img{
+        height: 70px;
+    }
+    .FinkiLogo {
+        margin-top: 7px;
+    }
 }
 
-.TopNavContainer {
-    float: right;
-    display: inline-flex;
-    padding-right: 27%;
+.NavBarContainer{
+    display: flex;
+    justify-content: space-between;
 }
 
-.TopNavBarLinks {
-    margin-top: 0;
+.NavBarLinks{
+    display: flex;
+    gap: 20px;
     list-style-type: none;
-    display: inline-flex;
-    li {
-        margin-inline: 10px;
-        a {
-            font-family: "roboto", sans-serif;
+    li{
+        a{
+            font-size: 25px;
             text-decoration: none;
-            color: white;
-            padding: 4px;
-            border-radius: 3px;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
         }
     }
-}
-.limit{
-    font-size: 12px;
-}
-
-.LanguageSwitch {
-    margin-top: -4px;
-}
-.language{
-    padding-left: 10px;
-    margin-right: 0;
-    li{
-        margin-inline: 3px;
+    a:hover{
+        background: #286090;
     }
 }
-.limit:hover{
-    background: #4c7ca6;
+.NavBarRight{
+    float: right;
 }
-
-/*nab bar 2 / bottom nav bar*/
-.NavBar2{
-    background: white;
-    width: 100%;
-    height: 75px;
-    padding-top: 10px;
+.DropDown{
+    padding: 1px 4px;
+    border-radius: 4px;
+    font-size: 40px;
+    display: none;
+    margin-top: 25px;
 }
 
 /*MainBody*/
@@ -71,72 +70,75 @@ body{
 }
 
 /*change size based on screen*/
-/*step 1*/
-@media screen and (min-width: 1000px) and (max-width: 1400px) {
-    /*Top Nav change*/
-    .TopNavContainer{
-        padding-right: 20vw;
+/*step */
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+    .NavBar{
+        margin: 0;
+        height: auto;
+        padding: 10px 40px;
     }
-    .limit{
-        font-size: 10px;
+
+    .NavBarContainer{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
     }
-    .TopNavBarLinks{
-        li{
-            margin-inline: 6px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+        img{
+            height: 70px;
         }
     }
 
-    /*Bottom nav change*/
-
-}
-/*step 2*/
-@media screen and (min-width: 700px) and (max-width: 1000px) {
-    /*Top Nav change*/
-    .TopNavContainer{
-        padding-right: 10vw;
-    }
-    .limit{
-        font-size: 9px;
-    }
-    .TopNavBarLinks{
+    .NavBarLinks {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        margin: 10px 20px;
         li{
-            margin-inline: 5px;
+            margin-inline: 20px;
+            a{
+                font-size: 40px;
+            }
         }
     }
 
-    /*Bottom nav change*/
-}
-/*step 3*/
-@media screen and (min-width: 450px) and (max-width: 700px) {
-    /*Top Nav change*/
-    .TopNavContainer{
-        padding-right: 4vw;
+    .DropDown{
+        display: none;
     }
-    .limit{
-        font-size: 6px;
-    }
-    .TopNavBarLinks{
-        li{
-            margin-inline: 5px;
-        }
-    }
-
-    /*Bottom nav change*/
 }
 /*step4*/
-@media screen and(max-width: 450px) {
-    /*Top Nav change*/
-    .TopNavContainer{
-        padding-right: 0;
-    }
-    .limit{
-        font-size: 6px;
-    }
-    .TopNavBarLinks{
-        li{
-            margin-inline: 3px;
-        }
+@media screen and (max-width: 800px) {
+    .NavBarLinks {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 10px;
+        flex-direction: column;
+        background: white;
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    /*Bottom nav change*/
+    .NavBarLinks.show {
+        display: flex;
+    }
+
+    .DropDown:hover{
+        background: #286090;
+    }
+
+    .DropDown {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
 }
