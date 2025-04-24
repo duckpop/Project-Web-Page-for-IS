@@ -1,0 +1,15 @@
+/*MainBody*/
+.MainBody{
+    height: 2000px;
+    background: pink;
+}
+
+/*change size based on screen*/
+/*medium step */
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+
+}
+/*smallest step*/
+@media screen and (max-width: 800px) {
+
+}

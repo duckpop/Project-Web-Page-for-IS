@@ -1,10 +1,17 @@
 var TimeOut = null;
-document.querySelector('.NavBarRight').addEventListener('mouseover', ()    => {
-    clearTimeout(TimeOut)
-    document.querySelector('.NavBarLinks').classList.add('show');
-});
-document.querySelector('.NavBarRight').addEventListener('mouseout', () => {
-    TimeOut = setTimeout(() => {
-        document.querySelector('.NavBarLinks').classList.remove('show');
-    },150);
-});
+var NavRight = document.querySelector('.NavBarRight')
+var NavLinks = document.querySelector('.NavBarLinks')
+var DropDown = document.querySelector('.DropDown')
+
+// NavRight.addEventListener('mouseover', ()    => {
+//     clearTimeout(TimeOut)
+//     NavLinks.classList.add('show');
+// });
+// NavRight.addEventListener('mouseout', () => {
+//     TimeOut = setTimeout(() => {
+//         NavLinks.classList.remove('show');
+//     },150);
+// });
+DropDown.addEventListener('click', () =>{
+    NavLinks.classList.toggle('show')
+})
