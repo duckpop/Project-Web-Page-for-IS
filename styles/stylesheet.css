@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background: gray;
+    background: white;
 }
 
 .prevent-select {
@@ -50,10 +50,23 @@ body{
             border-radius: 5px;
         }
     }
-    a:hover{
-        background: #286090;
-    }
 }
+
+.NavBarLinks li div {
+    margin-top: 10px;
+    height: 3px;
+    background-color: black;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+    border-radius: 20px;
+}
+
+.NavBarLinks a:hover + div {
+    transform: scaleX(1);
+}
+
 .NavBarRight{
     float: right;
 }
@@ -71,13 +84,14 @@ body{
     width: 100%;
     height: auto;
     display: flex;
+    background: #1D597F;
 }
 .MapContainer{
     margin-block: 5%;
     margin-left: 10%;
     width: 70%;
-    height: 82.5%;
-    background: white;
+    height: auto;
+    background: #eaeaea;
     border-radius: 20px;
     border: 0.20em solid black;
     display: inline-block;
@@ -110,7 +124,7 @@ body{
 }
 
 .CreatorTag{
-    color: white;
+    color: #eaeaea;
     font-size: 20px;
     margin: 0;
 }
@@ -134,15 +148,19 @@ body{
 }
 .fa-github{
     color: black;
-    background: white;
+    background: #eaeaea;
 }
 .fa-instagram{
-    color: pink;
-    background: white;
+    color: black;
+    background: #eaeaea;
 }
 .fa-rss{
     color: orange;
-    background: white;
+    background: #eaeaea;
+}
+.fa-linkedin{
+    color: lightskyblue;
+    background: #eaeaea;
 }
 
 .EndCardLinks{
@@ -157,7 +175,7 @@ body{
     color: white;
 }
 .end-card-links:hover{
-    color: #dcdcdc;
+    color: #a1a0a0;
 }
 
 /*change size based on screen*/
@@ -251,9 +269,11 @@ body{
     .MapTitle{
         display: none;
     }
+    .Iframe-Container{
+        text-align: center;
+    }
     .Map{
-        height: 90% !important;
-        width: 92.5% !important;
+        display: inline-block;
     }
 
     .orientation{

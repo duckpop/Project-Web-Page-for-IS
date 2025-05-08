@@ -1,5 +1,5 @@
-var TimeOut = null;
-var NavRight = document.querySelector('.NavBarRight')
+// var TimeOut = null;
+// var NavRight = document.querySelector('.NavBarRight')
 var NavLinks = document.querySelector('.NavBarLinks')
 var DropDown = document.querySelector('.DropDown')
 
