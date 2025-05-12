@@ -1,6 +1,7 @@
 /*MainBody*/
 .MainBody{
     margin-inline: 15%;
+    margin-block: 30px 50px;
     background: #ffffff;
     text-align: center;
     font-family: "roboto", sans-serif;
@@ -8,6 +9,7 @@
 
     h2{
         font-size: 40px;
+        width: 100%;
     }
 }
 
@@ -33,9 +35,6 @@
     margin-top: 2em;
     display: flex;
     gap: 2em;
-    p{
-        margin-top: 4em;
-    }
 }
 
 /*segment three*/
@@ -86,7 +85,6 @@
 
 .image-description {
     clear: both;
-    margin-top: 2rem;
     line-height: 1.6;
     text-align: center;
 }
@@ -95,9 +93,6 @@
 .main-segment-four{
     margin-top: 2em;
 }
-
-
-
 
 /*change size based on screen*/
 /*medium step */
@@ -147,6 +142,9 @@
 }
 /*smallest step*/
 @media screen and (max-width: 800px) {
+    .MainBody{
+        margin-inline: 8%;
+    }
     /*segment two*/
     .main-segment-two{
         display: inline;
