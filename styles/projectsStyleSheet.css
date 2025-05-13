@@ -1,0 +1,138 @@
+.MainBody{
+    margin-inline: 7%;
+    margin-block: 5%;
+    display: flex;
+    gap: 40px;
+    font-family: "roboto", sans-serif;
+}
+
+.year-links{
+    border-radius: 10px;
+    border: 1px solid black;
+    background: #f6f6f6;
+    width: 15%;
+    height: auto;
+    align-self: flex-start;
+}
+
+.ulist-links{
+    h2{
+        color: #286090;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: #1D597F;
+        font-size: 20px;
+    }
+    li{
+        margin-top: 15px;
+    }
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.ulist-links li div{
+    height: 3px;
+    background-color: black;
+    width: 50%;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ulist-links a:hover + div {
+    transform: scaleX(1);
+}
+
+
+.project-links{
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 85%;
+    padding: 2%;
+    h1{
+        margin-block: 30px;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+.image-container{
+    width: 100%;
+    height: 80%;
+    background-size: 100% 100%;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
+
+.segment{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.container-wrapper{
+    height: 200px;
+    text-align: center;
+    border-radius: 10px;
+    background: #d0d0d0;
+    border: 1px solid #d0d0d0;
+    box-shadow: 5px 3px 10px #a2a2a2;
+    padding-bottom: 20px;
+}
+
+.container-wrapper:hover{
+    cursor: pointer;
+}
+
+/*medium step */
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+    /*year links for medium*/
+    .year-links{
+        width: 20%;
+    }
+    .ulist-links{
+        padding: 10px;
+    }
+    .ulist-links li div{
+        width: 90%;
+    }
+
+    /*project links for medium*/
+    .segment{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/*smallest step*/
+@media screen and (max-width: 800px) {
+    /*year links min*/
+    .year-links{
+        display: none;
+    }
+
+    .MainBody{
+        margin-inline: 5%;
+    }
+
+    /*project links min*/
+    .project-links{
+        width: 100%;
+        padding-inline: 10%;
+        padding-bottom: 10%;
+    }
+
+    .segment{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
