@@ -48,6 +48,19 @@
     margin-right: auto;
 }
 
+.ulist-links.TCN li div{
+    background: white !important;
+}
+
+.ulist-links.TCN{
+    h2{
+        color: white;
+    }
+    a{
+        color: white;
+    }
+}
+
 .ulist-links a:hover + div {
     transform: scaleX(1);
 }
@@ -89,6 +102,12 @@
     border: 1px solid #d0d0d0;
     box-shadow: 5px 3px 10px #a2a2a2;
     padding-bottom: 20px;
+}
+
+.container-wrapper.TCN{
+    background: #2c2c2c;
+    border: 1px solid #505050;
+    box-shadow: none;
 }
 
 .container-wrapper:hover{

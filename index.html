@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="JS.js"></script>
     <meta charset="UTF-8">
     <title>ФИНКИ</title>
     <link rel="stylesheet" href="styles/stylesheet.css">
     <link rel="stylesheet" href="styles/mainStyleSheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="JS.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body>
+<body class="themeChangeNormal">
     <!--Nav bar with links and dropdown capability-->
-    <div class="NavBar">
+    <div class="NavBar themeChangeNormal">
         <div class="NavBarContainer">
             <div class="logo">
                 <div>
@@ -22,17 +22,17 @@
                 </div>
             </div>
             <div class="NavBarRight">
-                <ul class="NavBarLinks">
+                <ul class="NavBarLinks themeChangeNormal">
                     <li>
-                        <a class="prevent-select nav-links" href="index.html">Дома</a>
+                        <a class="prevent-select nav-links themeChangeNormal" href="index.html">Дома</a>
                         <div></div>
                     </li>
                     <li>
-                        <a class="prevent-select nav-links" href="projects.html">Проекти</a>
+                        <a class="prevent-select nav-links themeChangeNormal" href="projects.html">Проекти</a>
                         <div></div>
                     </li>
                     <li>
-                        <a class="prevent-select nav-links" href="staff.html">Кадар</a>
+                        <a class="prevent-select nav-links themeChangeNormal" href="staff.html">Кадар</a>
                         <div></div>
                     </li>
                 </ul>
@@ -43,18 +43,18 @@
     <hr>
 
     <!--Main body content, to contain all the information-->
-    <div class="MainBody">
+    <div class="MainBody themeChangeNormal">
         <div class="main-segment-one">
             <h2 class="Headline">
                 ПРОЕКТИ ПО ПРЕДМЕТОТ <b>ИНТЕЛИГЕНТНИ СИСТЕМИ</b>
             </h2>
             
-            <p class="Paragraph">
+            <p class="Paragraph ">
                 Лабораторијата за интелигентни системи започна со работа во 2009 година на Институтот за Информатика, при Природно - математичкиот факултет во Скопје. Основачи на лабораторијата се проф. Невена Ацковска и проф. Ана Мадевска Богданова. Во 2011 година, при основањето на Факултетот за Информатички науки и компјутерско инженерство, лабораторијата за интелигентни системи стана дел од оваа престижна институција. Лабораторијата располага со повеќе роботи , голем број на сензори, актуатори, компјутерска опрема, делови за градење на вградени системи, опрема за био-медицински и биоинформатички истражувања, опрема за градење асистивни технологии и др. Најголемиот дел од опремата е набавена со помош на повеќе македонски компании, дел од опремата е набавена преку проектите поддржани од оваа лабораторија, но и преку индивидуални донации.
             </p>
         </div>
         
-        <div class="main-segment-two">
+        <div class="main-segment-two themeChangeNormal">
             <p class="Paragraph">
                Целта на оваа лабораторија е да им овозможи на истражувачите да истражуваат напредни концепти од областа на интелигентните системи, како подобрување на перформансите на интелигентните системи, развој на алгоритми кои доведуваат до поинтелигентно однесување на вештачките системи, дигитално процесирање витални сигнали, биологизирање на вештачките системи, како воведување на концепти како емоции и самоучење кај вештачките системи, подобрување на алгоритмите кои се користат во биоинформатиката, надградување на живите суштества со хардверско – софтверски системи и др. Во оваа лабораторија се развиваат и хардверско - софтверски решенија за подобрување на асистивните технологии, преку интелигентно надградување на алатките кои би ги користеле специфични целни групи на луѓе, меѓу кои постари корисници, корисници со различни видови на физичка или ментална оневозможеност, дечиња со аутизам, деца со Даунов синдром, корисници од специфичен апликативен домен (како здравство, воени апликации) и  др.
             </p>
@@ -103,10 +103,10 @@
     </div>
 
     <!--End Card for extra information-->
-    <div class="EndCard">
+    <div class="EndCard themeChangeEnd">
         <div class="Map-location">
-            <div class="MapContainer">
-                <h2 class="MapTitle">Where is FINKI?</h2>
+            <div class="MapContainer themeChangeNormal">
+                <h2 class="MapTitle">Каде е ФИНКИ?</h2>
                 <div class="Iframe-Container" style="position: relative;">
                     <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
                         <iframe class="Map" style="position: absolute; top: 2.5%; left: 2.5%; width: 95%; height: 90%; border: 2px solid black;" loading="lazy" allowfullscreen src="https://maps.google.com/maps?q=finki&z=17&output=embed"></iframe>
@@ -124,16 +124,19 @@
                 </div>
 
                 <div class="CreatorLinks">
-                    <a href="https://github.com/duckpop" class="fa fa-github"></a>
-                    <a href="https://www.linkedin.com/in/blagoja-stojev-9b8152316/" class="fa fa-linkedin"></a>
-                    <a href="https://duckpop.github.io/web-page-homework/" class="fa fa-rss"></a>
+                    <a href="https://www.facebook.com/FINKI.ukim.mk/" class="fa fa-facebook"></a>
+                    <a href="https://x.com/FINKIedu" class="fa fa-twitter"></a>
+                    <a href="http://www.linkedin.com/company/faculty-of-computer-science-and-engineering---skopje" class="fa fa-linkedin"></a>
+                    <a href="http://www.youtube.com/user/FINKIedu" class="fa fa-youtube"></a>
+                    <div class="fa fa-moon-o" style="margin-left: auto" onclick="changetheme()"></div>
                 </div>
             </div>
         </div>
     </div>
-    <h1 class="EndCard CreatorTag">
-        Изработено од: Blagoja Stojev
-    </h1>
-    <script src="JS.js"></script>
+    <a class="themeChange" href="https://github.com/duckpop" style="text-decoration: none">
+        <h1 class="EndCard CreatorTag themeChangeEnd">
+            Изработено од: Blagoja Stojev
+        </h1>
+    </a>
 </body>
 </html>
