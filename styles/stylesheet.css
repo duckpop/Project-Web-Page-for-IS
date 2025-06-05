@@ -158,6 +158,7 @@ body{
     font-size: 30px;
     gap: 20px;
 }
+
 .fa{
     padding: 20px;
     width: 30px;
@@ -166,6 +167,22 @@ body{
     margin: 5px 2px;
     border-radius: 60px;
 }
+
+.fa-moon-o#themeControl{
+    background: none;
+    color: black;
+}
+
+.fa-sun-o#themeControl{
+    background: none;
+    color: white;
+}
+
+.fa-sun-o:hover,
+.fa-moon-o:hover{
+    cursor: pointer;
+}
+
 .fa:hover{
     background: #dcdcdc;
 }

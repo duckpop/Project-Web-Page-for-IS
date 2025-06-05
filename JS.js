@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    changeThemeIcon()
+
     if(cookieVal === "true"){
         changeThemeCokkie()
     }
@@ -64,6 +66,21 @@ function changeThemeCokkie(){
 }
 
 //
+function changeThemeIcon(){
+    var cookieVal = getCookieValue("darkMode")
+    var element = document.getElementById("themeControl")
+
+    if(cookieVal === "true" && element.classList.contains("fa-moon-o")){
+        element.classList.remove("fa-moon-o")
+        element.classList.add("fa-sun-o")
+    }
+    else if(cookieVal === "false" && element.classList.contains("fa-sun-o")){
+        element.classList.remove("fa-sun-o")
+        element.classList.add("fa-moon-o")
+    }
+
+}
+
 function changetheme(){
     var elements = document.getElementsByClassName("themeChangeNormal")
     for (var i = 0; i < elements.length; i++){
@@ -88,4 +105,6 @@ function changetheme(){
     }else{
         document.cookie = "darkMode=true; path=/; max-age=31536000"
     }
+
+    changeThemeIcon()
 }
