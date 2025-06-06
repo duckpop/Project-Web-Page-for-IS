@@ -53,6 +53,7 @@ body{
     display: flex;
     gap: 20px;
     list-style-type: none;
+    text-align: center;
     li{
         a{
             font-size: 25px;
