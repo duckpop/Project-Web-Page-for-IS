@@ -43,7 +43,7 @@ function getCookieValue(name) {
 
 function link(element){
     const location = element.getAttribute('data-location')
-    const locationEnd = 'projects/' +location + '.html'
+    const locationEnd = 'projects/' + location + "/" + location + '.html'
     if(locationEnd){
         window.location.href = locationEnd
     }else {
